@@ -11,3 +11,8 @@
    `npm run start`
 6. 問題なければビルドする
    `npm run build`
+
+## ESLint と Prettier の CI 環境構築
+
+1. パッケージのインストール
+   `npm install --save-dev eslint eslint-config-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin husky lint-staged`
