@@ -16,3 +16,7 @@
 
 1. パッケージのインストール
    `npm install --save-dev eslint eslint-config-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin husky lint-staged`
+2. huskyのpre-commitがうまく走らない場合
+  - `npm uninstall husky`
+  - `rm -rf .git/hooks`
+  - `npm install --save-dev husky`
