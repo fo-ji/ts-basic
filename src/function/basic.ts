@@ -19,3 +19,17 @@ export const logMessage4 = (message: string): void => console.log('Function basi
 export const alwaysThrowError = (message: string): never => {
   throw new Error(message)
 }
+
+// 呼び出しシグネチャ（省略記法）
+type LogMessage = (message: string) => void
+export const logMessage5: LogMessage = (message) => {
+  console.log('function basic sample 5: ', message)
+}
+
+// 完全な呼び出しシグネチャ
+type FullLogMessage = {
+  (message: string): void
+}
+export const logMessage6: FullLogMessage = (message) => {
+  console.log('function basic sample 5: ', message)
+}
